@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<>, initial-scale=1.0" />
+    <title>Studio Ghibli</title>
+    <style>
+      header {
+        text-align: center;
+      }
+      header img {
+        width: 75%;
+      }
+      h1 {
+        font-family: "Amaranth", sans-serif;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Amaranth", sans-serif;
+      }
+      body {
+        display: block;
+        margin: 8px;
+        background: radial-gradient(
+          592px at 48.2% 50%,
+          rgba(255, 255, 249, 0.6) 0%,
+          rgb(160, 199, 254) 74.6%
+        );
+      }
+      p {
+        font-size: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto;
+      }
+      .click_button {
+        font-size: 20px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        padding: 20px;
+        margin: 20px auto;
+        text-align: center;
+        border-radius: 10px;
+        color: black;
+        text-shadow: 2px 2px 4px rgba(44, 0, 219, 0.3);
+        animation: bouncing 0.6s ease infinite alternate;
+      }
+      @keyframes bouncing {
+        0% {
+          transform: translateY(0px);
+        }
+        100% {
+          transform: translateY(20px);
+        }
+      }
+
+      img {
+        width: 200px;
+        display: block;
+        padding: 20px;
+        margin: auto;
+        border-radius: 50px;
+      }
+      span {
+        font-size: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto;
+      }
+      .container {
+        margin: 50px auto;
+        box-shadow: 0px 30px 50px rgba(4, 2, 12, 0.5);
+        max-width: 600px;
+        padding: 40px;
+        border-radius: 50px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .ghibli_info {
+        margin-left: 50px;
+      }
+      .quoteButton {
+        display: block;
+        margin: 0 auto;
+        background-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        border: 1px solid lightblue;
+        border-radius: 8px;
+        padding: 12px 24px;
+        transition: all 0.3s ease;
+      }
+      .quoteButton:hover {
+        background-color: #ff2d5a;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .gallery {
+        display: flex;
+        overflow-x: auto;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .gallery_item {
+        flex: 0 0 auto;
+        margin-right: 5px;
+      }
+
+      .gallery_item:last-child {
+        margin-right: 0;
+      }
+
+      .gallery_item img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+      .gallery::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      .gallery::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+      }
+
+      .gallery::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }
+
+      .gallery::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+      }
+
+      .container_ghibli {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .study {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .study img {
+        border-radius: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .explore_ghibli {
+        justify-content: center;
+        text-align: center;
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Studio Ghibli</h1>
+        <img
+          src="https://www.nicepng.com/png/detail/846-8468604_hayao-miyazakis-characters-studio-ghibli-characters.png"
+        />
+      </header>
+      <div class="ghibli_info">
+        <p>
+          <strong>Studio Ghibli</strong> is a renowned Japanese animation studio
+          that has captured the hearts of audiences around the world. Founded in
+          1985 by the visionary directors Hayao Miyazaki and Isao Takahata,
+          Studio Ghibli has consistently delivered exceptional animated films
+          that blend artistry, imagination, and storytelling prowess. Their
+          movies have a distinctive charm and depth, exploring a range of themes
+          from environmentalism to friendship, and often featuring strong female
+          protagonists. With breathtaking hand-drawn animation, attention to
+          detail, and a commitment to preserving the traditional art of
+          animation, Studio Ghibli has earned a reputation for creating
+          cinematic gems that resonate with viewers of all ages.
+        </p>
+      </div>
+
+      <div class="container_ghibli">
+        <div class="study">
+          <img
+            src="https://i.pinimg.com/564x/5f/b4/72/5fb47247db139e5533f3644af61ef8a3.jpg"
+            alt=""
+            class="gallery_image"
+          />
+          <div class="explore_ghibli">
+            <p>
+              Embracing Studio Ghibli movies as a hobby is like opening the door
+              to a world of enchantment, beauty, and timeless storytelling.
+              These films have a profound impact on my emotions, evoking a sense
+              of joy, wonder, and a strong emotional connection. Through these
+              films, Studio Ghibli reminds me to appreciate the beauty in
+              everyday moments, to cherish the power of friendship and love, and
+              to recognize the importance of our environment. It is a truly
+              transformative experience that leaves a lasting impression,
+              filling me with a sense of awe and inspiration.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2>
+        Unveiling Studio Ghibli's Hidden Gems: Must-Watch Movie Recommendations
+      </h2>
+      <div class="gallery">
+        <div class="gallery_item">
+          <img
+            src="https://i.pinimg.com/564x/ec/51/e5/ec51e5ba8755a0bb17545d2139125a7c.jpg"
+            alt=""
+            class="gallery_image"
+          />
+        </div>
+        <div class="gallery_item">
+          <img
+            src="https://i.pinimg.com/736x/6c/52/a2/6c52a203a18b0ca1a8cae915c2206362.jpg"
+            alt=""
+            class="gallery_image"
+          />
+        </div>
+        <div class="gallery_item">
+          <img
+            src="https://i.pinimg.com/564x/b4/b3/fc/b4b3fcaeb6610703ef231d7fe6a782f8.jpg"
+            alt=""
+            class="gallery_image"
+          />
+        </div>
+        <div class="gallery_item">
+          <img
+            src="https://i.pinimg.com/564x/e0/1e/e4/e01ee4d522916ca215010cafc0dd1aec.jpg"
+            alt=""
+            class="gallery_image"
+          />
+        </div>
+        <div class="gallery_item">
+          <img
+            src="https://i.pinimg.com/564x/5e/c4/b7/5ec4b7616826d66aff07ad0555cf9c73.jpg"
+            alt=""
+            class="gallery_image"
+          />
+        </div>
+        <div class="gallery_item">
+          <img
+            src="https://i.pinimg.com/564x/20/f4/50/20f450f4265581f4d141464489746241.jpg"
+            alt=""
+            class="gallery_image"
+          />
+        </div>
+        <div class="gallery_item">
+          <img
+            src="https://i.pinimg.com/564x/19/75/89/1975899cf1d58fd9ec61726bf66b4d13.jpg"
+            alt=""
+            class="gallery_image"
+          />
+        </div>
+        <div class="gallery_item">
+          <img
+            src="https://i.pinimg.com/564x/10/ef/cb/10efcbf6b60e7bb638e133499c3d05f6.jpg"
+            alt=""
+            class="gallery_image"
+          />
+        </div>
+      </div>
+      <div class="click_button">
+        Discover Studio Ghibli's quotes for whimsical insights! Click below
+      </div>
+      <br />
+      <button class="quoteButton">Click Me</button>
+    </div>
+
+    <script>
+      function ghibliQuotes() {
+        let quotes = [
+          "The Earth speaks to all of us, and if we listen, we can understand. - Ponyo",
+          "Life is suffering. It is hard. The world is cursed, but still, you find reasons to keep living. - Princess Mononoke",
+          "Remember, you're the one who can fill the world with sunshine. - My Neighbor Totoro",
+          "Always believe in yourself. Do this and no matter where you are, you will have nothing to fear. - The Wind Rises",
+          "Many of the truths that we cling to depend on our point of view. - The Princess Mononoke",
+          "No matter how many weapons you have, no matter how great your technology might be, the world cannot live without love! - Castle in the Sky",
+          "I've just been dreaming a lot. Haven't you been dreaming a lot, too? - Whisper of the Heart",
+          "Life is a winking light in the darkness. - Grave of the Fireflies",
+          "Just follow your heart and keep smiling. - Kiki's Delivery Service",
+          "You cannot alter your fate. However, you can rise to meet it. - Princess Mononoke",
+          "It's funny how you wake up each day and never really know if it'll be one that will change your life forever. - The Secret World of Arrietty",
+          "Always believe in your dreams. If you don't, they'll never come true. - Porco Rosso",
+          "Memories fade, but the heart remembers. - When Marnie Was There",
+          "Once you've met someone, you never really forget them. - Spirited Away",
+          "Sometimes, the world seems like a dark place. But you can't give up. You have to take a closer look and find the light. - From Up on Poppy Hill",
+          "Even in the depths of darkness, there is always a light that shines within us. - The Tale of the Princess Kaguya",
+          "You must be imaginative, strong-hearted. You must try things that may not work, and you must not let anyone define your limits. - The Secret World of Arrietty",
+          "I can't give up. I have to keep walking. - Whisper of the Heart",
+          "Life is suffering, and suffering is a part of being alive. But, I've learned that some of the most beautiful moments come from it. - The Wind Rises",
+          "It's not enough to be lucky. You have to believe that you're lucky too. - The Cat Returns",
+        ];
+        let random = quotes[Math.floor(Math.random() * quotes.length)];
+        alert(random);
+      }
+
+      function buttonClick() {
+        let theButton = document.querySelector(".quoteButton");
+        theButton.addEventListener("click", ghibliQuotes);
+      }
+
+      buttonClick();
+    </script>
+  </body>
+</html>
