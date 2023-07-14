@@ -35,25 +35,6 @@
         padding: 20px;
         margin: 20px auto;
       }
-      .click_button {
-        font-size: 20px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        padding: 20px;
-        margin: 20px auto;
-        text-align: center;
-        border-radius: 10px;
-        color: black;
-        text-shadow: 2px 2px 4px rgba(44, 0, 219, 0.3);
-        animation: bouncing 0.6s ease infinite alternate;
-      }
-      @keyframes bouncing {
-        0% {
-          transform: translateY(0px);
-        }
-        100% {
-          transform: translateY(20px);
-        }
-      }
 
       img {
         width: 200px;
@@ -70,11 +51,10 @@
         padding: 20px;
         margin: 20px auto;
       }
-      .container
-        flex: 1;
+      .container {
         margin: 50px auto;
         box-shadow: 0px 30px 50px rgba(4, 2, 12, 0.5);
-        max-width: 600px;
+        max-width: 550px;
         padding: 40px;
         border-radius: 50px;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -86,10 +66,10 @@
       .quoteButton {
         display: block;
         margin: 0 auto;
-        background-color: transparent;
+        background: rgb(113, 163, 179); 
         color: #fff;
         font-size: 20px;
-        border: 1px solid lightblue;
+        border: 1px solid rgb(113, 163, 179);
         border-radius: 8px;
         padding: 12px 24px;
         transition: all 0.3s ease;
@@ -164,6 +144,25 @@
         text-align: center;
         width: 400px;
         height: 400px;
+      }
+      .button_info {
+        font-size: 20px;
+        font-family:"Comic Sans MS", cursive, sans-serif;;
+        padding: 20px;
+        margin: 20px auto;
+        text-align: center;
+        border-radius: 10px;
+        color: black;
+        text-shadow: 2px 2px 4px rgba(44, 0, 219, 0.3);
+        animation: bouncing 0.6s ease infinite alternate;
+      }
+      @keyframes bouncing {
+        0% {
+          transform: translateY(0px);
+        }
+        100% {
+          transform: translateY(20px);
+        }
       }
     </style>
   </head>
@@ -275,7 +274,7 @@
           />
         </div>
       </div>
-      <div class="click_button">
+      <div class="button_info">
         Discover Studio Ghibli's quotes for whimsical insights! Click below
       </div>
       <br />
@@ -318,4 +317,6 @@
       buttonClick();
     </script>
   </body>
+</html>
+
 </html>
