@@ -66,16 +66,16 @@
       .quoteButton {
         display: block;
         margin: 0 auto;
-        background: rgb(113, 163, 179); 
-        color: #fff;
+        background:transparent; 
+        color: black;
         font-size: 20px;
-        border: 1px solid rgb(113, 163, 179);
+        border: 1px solid rgb(199, 215, 242);
         border-radius: 8px;
         padding: 12px 24px;
         transition: all 0.3s ease;
       }
       .quoteButton:hover {
-        background-color: #ff2d5a;
+        background-color: rgb(199, 215, 242);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         cursor: pointer;
       }
@@ -313,8 +313,23 @@
         let theButton = document.querySelector(".quoteButton");
         theButton.addEventListener("click", ghibliQuotes);
       }
+      function buttonClick2() {
+        let theButton = document.querySelector(".quoteButton");
+        theButton.addEventListener("click", infoChange);
+      }
+       function updateHeading(newHeading) {
+        let heading = document.querySelector(".button_info");
+        heading.innerHTML = newHeading;
+      }
 
+      function infoChange() {
+        updateHeading(
+            "Click again for another quote 🌟"
+          );
+      }
+ 
       buttonClick();
+      buttonClick2();
     </script>
   </body>
 </html>
