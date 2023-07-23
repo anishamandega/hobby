@@ -28,4 +28,4 @@ As you continue scrolling, you'll come across a visually appealing gallery of St
 Lastly, the website features a delightful "Click Me" button. By clicking this button, you'll be presented with random quotes from various Studio Ghibli movies. Each quote provides whimsical insights and serves as a charming addition to the overall experience.
 
 
-# Thank you for visiting the Studio Ghibli Website! We hope you enjoy exploring the magical world of Studio Ghibli and experience the beauty of their extraordinary animated films. Happy browsing!
+Thank you for visiting the Studio Ghibli Website! We hope you enjoy exploring the magical world of Studio Ghibli and experience the beauty of their extraordinary animated films. Happy browsing!
